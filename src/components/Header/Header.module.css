@@ -1,0 +1,62 @@
+/* Estilo base do header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Estilo da logo */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Estilo dos links */
+  .nav_links {
+    color: black;
+    display: flex;
+    gap: 20px;
+  }
+  .nav_links a {
+    color: #000;
+  }
+  .hamburguer_icon {
+    display: none;
+  }
+  /* Estilo do menu modal */
+  .menu_modal {
+    display: none;
+  }
+  
+  /* Estilo do menu modal responsivo */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+    }
+  
+    .nav_links {
+        display: none;
+      flex-direction: column;
+    }
+  
+ 
+  
+    /* Estilo do ícone do hambúrguer */
+    .hamburguer_icon {
+      display: block;
+      cursor: pointer;
+    }
+  
+    /* Adicione aqui estilos para o ícone do hambúrguer, por exemplo:
+    .hamburguer_icon svg {
+      fill: #333;
+    }
+    */
+  
+    /* Estilo para esconder o menu de links na versão mobile quando o modal está ativo */
+    .menu_modal.active {
+      display: block;
+    }
+  }
+  

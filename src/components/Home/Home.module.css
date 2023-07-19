@@ -1,0 +1,35 @@
+
+.card_text {
+    width: 100%
+}
+.card_text p {
+    text-align: left;
+    width: 345px;
+    margin: 0 auto;
+}
+.card_text button {
+    text-align: left;
+    background-color: black;
+    color: white;
+    margin-top: 1rem;
+    margin-right: 9.5rem;
+    border: 0;
+    padding: 0.8rem;
+}
+.cardImg {
+    width: 100%;
+}
+.cardImg img {
+    width: 80%;
+    border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 468px) {
+    .card_text p {
+        text-align: center;
+    }
+    .card_text button {
+        text-align: center;
+        margin: 1rem auto;
+    }
+}
